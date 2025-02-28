@@ -1,32 +1,74 @@
-
-# Ignore TypeScript config and caches
+# Конфигурационные файлы TypeScript и кэш
 tsconfig.*.json
 tsconfig.tsbuildinfo
-rollup.config.js
-output/**
-docs.wrm/**
-.github/**
 
-# Ignore admin scripts and files
-src.ts/_admin/**
-lib.commonjs/_admin/**
-lib.esm/_admin/**
-types/_admin/**
+# Конфигурация Rollup
+rollup.config.js
+
+# Директории вывода
+output/
+dist/
+build/
+out/
+
+# Документация
+docs.wrm/
+
+# Служебные директории и файлы
+.github/
+src.ts/_admin/
+lib.commonjs/_admin/
+lib.esm/_admin/
+types/_admin/
 reporter.cjs
 package-commonjs.json
 .github/workflows/test-ci.yml
 
-# Ignore test cases
-src.ts/_tests/**
-lib.commonjs/_tests/**
-lib.esm/_tests/**
-types/_tests/**
-testcases/**
+# Тестовые кейсы
+src.ts/_tests/
+lib.commonjs/_tests/
+lib.esm/_tests/
+types/_tests/
+testcases/
 
-# Ignore random junk
+# Зависимости
+node_modules/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Кэш ESLint
+.eslintcache
+
+# Системные файлы
 .DS_Store
 .iterm2-project
-node_modules/**
-misc/**
+
+# Файлы, создаваемые npm
 **/*.tgz
+
+# Файлы сборки
 dist/*.gz
+
+# Настройки IDE/редакторов
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Прочие временные или служебные директории
+misc/
